@@ -2,8 +2,8 @@
   <HelloWorld/>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script >
+import HelloWorld from './components/vue3-002.vue'
 
 export default {
   name: 'App',
