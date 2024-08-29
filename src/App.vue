@@ -3,7 +3,7 @@
 </template>
 
 <script >
-import HelloWorld from './components/vue3-003.vue'
+import HelloWorld from './components/vue3-007.vue'
 
 export default {
   name: 'App',

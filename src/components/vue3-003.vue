@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1>姓名：{{ name }}</h1>
-        <h1>年龄：{{ age }}</h1>
+        <h1>姓名：{{ obj.name }}</h1>
+        <h1>年龄：{{ obj.age }}</h1>
         <h1>对象：{{ obj.name }} - {{ obj.age }}</h1>
         <h1>深层次数据：{{ obj.pro.a.b[0] }}</h1>
         <br>
@@ -17,8 +17,8 @@ export default {
         const name = '张三'
         const age = 18
         const obj = reactive({
-            name:'小A',
-            age:20,
+            name,
+            age,
             pro:{
                 a:{
                     b:['我是深层次数据']

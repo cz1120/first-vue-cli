@@ -2,6 +2,7 @@
   <div class="hello">
     hello world !!!
     <button @click="btn">点我</button>
+    <p>{{res}}</p>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ export default {
     const res = '123'
 
     const btn = () => {
+      res = '456'
       console.log('执行btn函数...',res)
     }
 
