@@ -1,13 +1,15 @@
 <template>
-  <div class="back">
+  <!-- <div class="back">
     这是父组件:{{ this.$store.state.count }}
     <button @click="this.$store.commit('increment',10)">按钮</button>
-  </div>
-  <HelloWorld/>
+  </div> -->
+  <button @click="v1 = !v1">点击让子组件显示/隐藏</button>
+  <HelloWorld v-if="v1"/>
 </template>
 
 <script >
-import HelloWorld from './components/vue3-011.vue'
+import { ref } from 'vue';
+import HelloWorld from './components/vue3-012.vue'
 
 export default {
   name: 'App',
@@ -15,7 +17,8 @@ export default {
     HelloWorld
   },
   setup() {
-    return {}
+    const v1 = ref(true)
+    return {v1}
   }
 }
 </script>
