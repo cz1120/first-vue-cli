@@ -1,7 +1,7 @@
 <template>
   <div class="back">
     这是父组件:{{ this.$store.state.count }}
-    
+    <button @click="this.$store.commit('increment',10)">按钮</button>
   </div>
   <HelloWorld/>
 </template>
