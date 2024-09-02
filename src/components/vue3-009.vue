@@ -30,7 +30,7 @@ export default {
         // 计时器：对p1、p2、p3的age.num进行一秒增加一个的操作
         const timer = setInterval(() => {
             p1.value++;
-            p2.value++;
+            p2.value+=2;
             p3.age.num++;
         }, 1000)
 
